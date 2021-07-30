@@ -1,0 +1,122 @@
+$parrafos: 1em "Raleway", sans-serif;
+$titulos: 2em "Lato", sans-serif;
+$obscuro: #0a3143;
+$claro: #cecfc9;
+$colorLetras: #222222;
+$primary: #276e90;
+
+$accordion-bg: $primary;
+$accordion-color: $claro;
+$accordion-button-active-color: $obscuro;
+$accordion-button-active-bg: $primary;
+$navbar-padding-y: 0;
+$navbar-light-color: $claro;
+
+@import "../LibreriaVirtual.css/node/node_modules/bootstrap/scss/bootstrap.scss";
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $claro;
+  header,
+  footer {
+    height: max-content;
+    width: 100%;
+    background-color: $primary;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+a,
+strong {
+  width: max-content;
+  color: $claro;
+  font: $parrafos;
+}
+p {
+  font: $parrafos;
+  color: $colorLetras;
+}
+h1,
+h2,
+h3 {
+  color: $obscuro;
+  font: $titulos;
+  text-align: center;
+}
+h2,
+h3 {
+  font-size: 1.5em;
+}
+.headerFooter__a__logo--size {
+  width: 4rem;
+  height: 13vh;
+  margin-right: 3rem;
+}
+.headerFooter__a__logo--size:hover {
+  transition: 1s;
+  transform: scale(1.1, 1.1);
+}
+
+.container-fluid {
+  background-color: $primary;
+}
+.nav-item {
+  border: solid 1px $obscuro;
+  border-radius: 5%;
+  margin: 1em;
+  width: max-content;
+}
+.nav-item:hover {
+  transition: 0.75s;
+  background-image: radial-gradient($primary, $obscuro);
+}
+.nav-item:active {
+  transition: 1s;
+  background-color: #083042;
+  box-shadow: $colorLetras;
+}
+
+footer {
+  .footer__contacto--deco {
+    margin-right: 1em;
+    margin-left: -4em;
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        transition: 0.5s;
+        color: $obscuro;
+        background-color: #57a5c9;
+      }
+    }
+  }
+  .footer__redes {
+    margin-right: 2rem;
+  }
+  .footer__div--flexRedes {
+    display: flex;
+    flex-direction: column;
+  }
+  a {
+    margin: 0.2rem;
+  }
+}
+.footer__redes--transformacion:hover {
+  transition: 0.5s;
+  transform: translate3d(-3px, 3px, 5px) scale(1.1, 1.1);
+}
+@import "indexStyle";
+@import "inscripcionStyle";
+@import "librosStyle";
+@import "preguntasFrecuentesStyle";
+@import "quienesSomosStyle";

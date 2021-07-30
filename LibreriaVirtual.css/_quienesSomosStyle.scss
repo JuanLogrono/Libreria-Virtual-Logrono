@@ -1,0 +1,28 @@
+$parrafos: 1em "Raleway", sans-serif;
+$titulos: 1.5em "Lato", sans-serif;
+$obscuro: #0a3143;
+$claro: #cecfc9;
+$colorLetras: #222222;
+$principal: #276e90;
+
+.nosotros {
+  background-color: white;
+  margin: 0 auto;
+  width: 60%;
+   
+  .nosotros__logoNos--size {
+    height: 13.6em;
+    width: 50%;
+    background-color: $claro;
+  }
+  .nosotros__imgBannerNos--size {
+    height: 7em;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px){
+  .nosotros{
+    width: 80%;
+  }
+}

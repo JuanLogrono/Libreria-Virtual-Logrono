@@ -1,0 +1,17 @@
+.nosotros {
+  background-color: white;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.nosotros .nosotros__logoNos--size {
+  height: 13.6em;
+  width: 50%;
+  background-color: #cecfc9;
+}
+
+.nosotros .nosotros__imgBannerNos--size {
+  height: 7em;
+  width: 100%;
+}
+/*# sourceMappingURL=quienesSomosStyle.css.map */

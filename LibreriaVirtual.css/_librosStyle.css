@@ -1,0 +1,73 @@
+.libros__imagenPortada--size {
+  width: 5rem;
+  height: 8rem;
+}
+
+.libros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.libros article {
+  border: solid 1px #0a3143;
+  background-color: #93cff57c;
+  margin: 3px 5px;
+  border-radius: 1%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 8fr 2fr;
+      grid-template-columns: 1fr 8fr 2fr;
+  -ms-grid-rows: 1fr 1fr 2fr;
+      grid-template-rows: 1fr 1fr 2fr;
+}
+
+.libros article img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / span 3;
+  -ms-grid-column: 1;
+  grid-column: 1/1;
+}
+
+.libros article h2 {
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+}
+
+.libros article h3 {
+  -ms-grid-row: 2;
+  grid-row: 2/2;
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+}
+
+.libros article p {
+  -ms-grid-row: 3;
+  grid-row: 3/3;
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+}
+
+.libros article ul {
+  grid-row: 1 / span3;
+  -ms-grid-column: 3;
+  grid-column: 3/3;
+  font-size: 1.1rem;
+  margin-left: 2rem;
+}
+
+.libros article ul li {
+  list-style: inside;
+  list-style-type: square;
+}
+/*# sourceMappingURL=librosStyle.css.map */

@@ -1,0 +1,126 @@
+.faq {
+  background-image: url(../assets/fondoAyuda.png);
+  background-size: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.faq p {
+  background-color: #276e90;
+  color: #cecfc9;
+  padding: 1rem;
+}
+
+.faq h1 {
+  background-color: #0a3143;
+  color: #cecfc9;
+  margin: 2px;
+  padding: 2px;
+}
+
+.faq article {
+  z-index: 0;
+  width: 60%;
+  background-color: #efefef;
+}
+
+.faq .btn {
+  z-index: 0;
+  background-color: #276e90;
+  border: solid 2px #0a3143;
+  margin: 2px;
+  color: #cecfc9;
+  font-size: 1.2rem;
+}
+
+.contactoForm {
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contactoForm form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5fr 2fr;
+      grid-template-columns: 1.5fr 2fr;
+  -ms-grid-rows: (0.5fr)[3];
+      grid-template-rows: repeat(3, 0.5fr);
+}
+
+.contactoForm div {
+  margin: 2.5px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactoForm div .form__botonContacto--flex {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.contactoForm div .form__botonContacto--flex input {
+  width: 7em;
+  margin: 3px;
+}
+
+.contactoForm h2 {
+  margin-right: 1em;
+}
+
+.form__otroMotivo--grid {
+  width: 15em;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+  -ms-grid-column: 1;
+  grid-column: 1/1;
+}
+
+.form__datos--grid {
+  width: 15em;
+  -ms-grid-row: 2;
+  grid-row: 2/2;
+  -ms-grid-column: 1;
+  grid-column: 1/1;
+}
+
+.form__email--grid {
+  width: 15em;
+  -ms-grid-row: 3;
+  grid-row: 3/3;
+  -ms-grid-column: 1;
+  grid-column: 1/1;
+}
+
+.form__areaBoton--grid {
+  width: 15em;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  grid-row: 1 / span 4;
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+}
+/*# sourceMappingURL=preguntasFrecuentesStyle.css.map */

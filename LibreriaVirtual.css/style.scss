@@ -11,6 +11,7 @@ $accordion-button-active-color: $obscuro;
 $accordion-button-active-bg: $primary;
 $navbar-padding-y: 0;
 $navbar-light-color: $claro;
+$card-bg: #4b7183;
 
 @import "../LibreriaVirtual.css/node/node_modules/bootstrap/scss/bootstrap.scss";
 * {
@@ -54,6 +55,10 @@ h3 {
 h2,
 h3 {
   font-size: 1.5em;
+}
+h5{
+  color:$obscuro;
+  font-weight: bold;
 }
 .headerFooter__a__logo--size {
   width: 4rem;

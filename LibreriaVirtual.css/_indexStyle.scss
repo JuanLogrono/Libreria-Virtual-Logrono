@@ -7,58 +7,53 @@ $principal: #276e90;
 
 .article__banner--width {
   width: 100%;
-  height: 25vh;
+  height:40vh;
 }
 .sectionAside--flex {
   display: flex;
   flex-direction: row;
+  section{
+    width: 120rem;
+   >p{
+     width: 100%;
+     text-align: center;
+     margin:2px;
+   }
+   .container{
+     display: flex;
+     flex-direction: row;
+     margin:0;
+     .card:hover{
+       background-color: $claro;
+       border: solid 2px $obscuro;
+     }
+ }
+}
 }
 
-.section__recomendacion--grid {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: 1fr;
-  justify-content: center;
-  margin-bottom: 5px;
-  margin-left: 5px;
-  background-color: #93cff57c;
-  img {
-    width: 5rem;
-    height: 7rem;
-    justify-self: center;
+.cards__imagenes--size {
+    width: 7rem;
+    height: 10rem;
+    margin-top: 6px;
   }
-}
+ 
 
-.article__primeraPortada--gridOrder {
-  grid-row: 1/1;
-  grid-column: 1/1;
-  margin: 0 2px;
-}
-.article__primerResumen--gridOrder {
-  grid-row: 1/1;
-  grid-column: 2 / span 2;
-}
-.article__segundaPortada--gridOrder {
-  grid-row: 1/1;
-  grid-column: 3/3;
-  margin: 0 px;
-}
-.article__segundoResumen--gridOrder {
-  grid-row: 1/1;
-  grid-column: 1 / span 2;
-}
 
-aside {
+aside {  
+  position: sticky;
+  top: 10em;
+  width: 35%;
+  height: 50%;
   overflow: hidden;
-  margin: 3px 3px 1px 1px;
+  margin: 3px 2px 1px 1px;
 }
 .aside__div--animacion {
   display: flex;
-  flex-direction: flex;
+  flex-direction: row;
   align-items: center;
   height: 100%;
-  width: 55rem;
-  animation: desliza 10s infinite alternate-reverse;
+  width: 60rem;
+  animation: desliza 15s infinite alternate-reverse;
   animation-timing-function: linear;
 }
 @keyframes desliza {
@@ -80,18 +75,24 @@ aside {
 }
 
 .aside__elementos--size {
-  width: 80%;
+  width: 100%;
   height: 100%;
 }
 
-@media (max-width: 780px) {
+@media (max-width:1024px) {  
   .sectionAside--flex {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    section{
+      width: 100%;
+    }
   }
+  aside{
+    width:80%;
   .aside__div--animacion {
-    animation: none;
-    height: 10em;
+    height: 12em;
     width: 100%;
   }
+}
 }

@@ -11684,7 +11684,7 @@ footer a {
   width: 120rem;
 }
 
-.sectionAside--flex section > p {
+.sectionAside--flex section p {
   width: 100%;
   text-align: center;
   margin: 2px;

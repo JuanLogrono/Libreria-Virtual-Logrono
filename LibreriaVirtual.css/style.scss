@@ -3,15 +3,22 @@ $titulos: 2em "Lato", sans-serif;
 $obscuro: #0a3143;
 $claro: #cecfc9;
 $colorLetras: #222222;
-$primary: #276e90;
+$principal: #276e90;
 
-$accordion-bg: $primary;
+$accordion-bg: $principal;
 $accordion-color: $claro;
 $accordion-button-active-color: $obscuro;
-$accordion-button-active-bg: $primary;
+$accordion-button-active-bg: $principal;
 $navbar-padding-y: 0;
 $navbar-light-color: $claro;
 $card-bg: #4b7183;
+$primary: $claro;
+$secondary:$claro;
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+);
+
 
 @import "../LibreriaVirtual.css/node/node_modules/bootstrap/scss/bootstrap.scss";
 * {
@@ -19,16 +26,52 @@ $card-bg: #4b7183;
   padding: 0;
 }
 body {
-  height: 100vh;
+  height: 100%; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: $claro;
+ 
+  .div__formularioDeIngreso--flex{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: $obscuro;
+    position: sticky;
+    top:0.01px;
+    z-index: 2;
+    img{
+      height: 2em;
+      margin:0.2em 1em;}
+    .formularioDeIngreso__img--animacion:hover{
+      transition:0.5s;
+      transform: scale(1,1);
+      border-radius: 35%;
+      background-color:$principal;
+    }
+   .formularioDeIngreso__img--animacion:active{
+      transition: .2s;
+      transform: scale(0.95,0.95);
+    }
+  }
+  .modal-content span{
+    margin: 3px;
+  }
+  .ingreso__formulario--flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+.modal-footer{
+  justify-content: center;
+}
+
   header,
   footer {
     height: max-content;
     width: 100%;
-    background-color: $primary;
+    background-color: $principal;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -66,12 +109,12 @@ h5{
   margin-right: 3rem;
 }
 .headerFooter__a__logo--size:hover {
-  transition: 1s;
+  transition: 0.5s;
   transform: scale(1.1, 1.1);
 }
 
 .container-fluid {
-  background-color: $primary;
+  background-color: $principal;
 }
 .nav-item {
   border: solid 1px $obscuro;
@@ -81,7 +124,7 @@ h5{
 }
 .nav-item:hover {
   transition: 0.75s;
-  background-image: radial-gradient($primary, $obscuro);
+  background-image: radial-gradient($principal, $obscuro);
 }
 .nav-item:active {
   transition: 1s;
@@ -120,6 +163,7 @@ footer {
   transition: 0.5s;
   transform: translate3d(-3px, 3px, 5px) scale(1.1, 1.1);
 }
+
 @import "indexStyle";
 @import "inscripcionStyle";
 @import "librosStyle";

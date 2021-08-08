@@ -13,12 +13,11 @@ $principal: #276e90;
   display: flex;
   flex-direction: row;
   section{
-    width: 120rem;
+    width: 100%;
    p{
      width: 100%;
      text-align: center;
      margin:2px;
-     padding: 8px;
    }
    .container{
      display: flex;
@@ -42,9 +41,9 @@ $principal: #276e90;
 
 aside {  
   position: sticky;
-  top: 10em;
-  width: 35%;
-  height: 50%;
+  top: 13.5em;
+  width: 20%;
+  height: 20em;
   overflow: hidden;
   margin: 3px 2px 1px 1px;
 }
@@ -52,7 +51,7 @@ aside {
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 100%;
+  height: 100%; 
   width: 60rem;
   animation: desliza 15s infinite alternate-reverse;
   animation-timing-function: linear;
@@ -86,13 +85,13 @@ aside {
     flex-direction: column;
     align-items: center;
     section{
-      width: 100%;
+      width: 90%;
     }
   }
   aside{
-    width:80%;
+    width:75%;
   .aside__div--animacion {
-    height: 12em;
+    height: 15em;
     width: 100%;
   }
 }

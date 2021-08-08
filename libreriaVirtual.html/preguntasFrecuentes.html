@@ -17,6 +17,39 @@
 </head>
 
 <body>
+  <div class="div__formularioDeIngreso--flex">         
+    <img class="formularioDeIngreso__img--animacion" src="../assets/usuario.svg" alt="mi usuario" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-toggle="tooltip" data-bs-html="true" title="Mi usuario">
+    <div>
+      <a href="#"><img class="formularioDeIngreso__img--animacion" src="../assets/carrito de compras.svg" alt="carrito de compras" title="reservados"></a>
+      <a href="preguntasFrecuentes.html"><img class="formularioDeIngreso__img--animacion" src="../assets/flecha arriba.svg" alt="subir" title="Subir"></a>
+   </div>
+ </div>
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">Ingreso</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+        <form action="get" class="ingreso__formulario--flex">
+       
+           <label for="usuario">Usuario</label>
+           <input type="text" name="usuario" />
+        
+           <label for="pass">Contraseña</label>
+           <input type="password" name="pass"/>
+       
+         </div>
+         <div class="modal-footer">
+           <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+           <button type="button" class="btn btn-primary">Ingresar</button>
+         </div>
+       </form>
+         <span>Si no estas inscripto presiona <a class="bg-dark" href="../inscripcion.html">Aquí</a></span>
+     </div>
+   </div>
+ </div>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">

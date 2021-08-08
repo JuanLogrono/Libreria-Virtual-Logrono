@@ -17,6 +17,39 @@
 </head>
 
 <body>
+  <div class="div__formularioDeIngreso--flex">         
+    <img class="formularioDeIngreso__img--animacion" src="../assets/usuario.svg" alt="mi usuario" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-toggle="tooltip" data-bs-html="true" title="Mi usuario">
+    <div>
+      <a href="#"><img class="formularioDeIngreso__img--animacion" src="../assets/carrito de compras.svg" alt="carrito de compras" title="reservados"></a>
+      <a href="inscripcion.html"><img class="formularioDeIngreso__img--animacion" src="../assets/flecha arriba.svg" alt="subir" title="Subir"></a>
+   </div>
+ </div>
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">Ingreso</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+        <form action="get" class="ingreso__formulario--flex">
+       
+           <label for="usuario">Usuario</label>
+           <input type="text" name="usuario" />
+        
+           <label for="pass">Contraseña</label>
+           <input type="password" name="pass"/>
+       
+         </div>
+         <div class="modal-footer">
+           <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+           <button type="button" class="btn btn-primary">Ingresar</button>
+         </div>
+       </form>
+         <span>Si no estas inscripto presiona <a class="bg-dark" href="../inscripcion.html">Aquí</a></span>
+     </div>
+   </div>
+ </div>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
@@ -73,6 +106,20 @@
           <input type="email" name="mail" />
         </div>
         <div>
+          <label for="password">Contraseña</label>
+          <input type="password" name="password" />
+        </div>
+        <div>
+          <label for="passwordRepetir">Repetir Contraseña</label>
+          <input type="password" name="passwordRepetir"/>
+        </div>
+          <label for="genero">Géneros que prefieres </label>
+        <label><input type="checkbox" name="genero" value="first_checkbox"> Terror</label>
+        <label><input type="checkbox" name="genero" value="first_checkbox"> Aventura</label>
+        <label><input type="checkbox" name="genero" value="first_checkbox"> Suspenso</label>
+        <label><input type="checkbox" name="genero" value="first_checkbox"> Ciencia Ficción</label> 
+        <input type="text" name="genero" placeholder="otros">
+        <div>
           <label for="estadoCivil">Estado civil</label>
           <select class="formulario__estadoCivil--size" name="estadoCivil">
             <option value="soltero">soltero</option>
@@ -83,9 +130,6 @@
         <div>
           <label for="newsletter">¿Desea recibir Newsletter?</label>
           <input type="checkbox" name="newsletter" value="1" />
-        </div>
-        <div>
-          <textarea rows="5" cols="27">comentarios</textarea>
         </div>
         <div>
           <input class="formulario__boton--color" type="reset" value="Limpiar Formulario" />

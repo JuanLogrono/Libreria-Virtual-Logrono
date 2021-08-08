@@ -17,6 +17,39 @@
 </head>
 
 <body>
+  <div class="div__formularioDeIngreso--flex">         
+    <img class="formularioDeIngreso__img--animacion" src="./assets/usuario.svg" alt="mi usuario" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-toggle="tooltip" data-bs-html="true" title="Mi usuario">
+    <div>
+      <a href="#"><img class="formularioDeIngreso__img--animacion" src="./assets/carrito de compras.svg" alt="carrito de compras" title="reservados"></a>
+      <a href="index.html"><img class="formularioDeIngreso__img--animacion" src="./assets/flecha arriba.svg" alt="subir" title="Subir"></a>
+   </div>
+ </div>
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">Ingreso</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+        <form action="get" class="ingreso__formulario--flex">
+       
+           <label for="usuario">Usuario</label>
+           <input type="text" name="usuario" />
+        
+           <label for="pass">Contraseña</label>
+           <input type="password" name="pass"/>
+       
+         </div>
+         <div class="modal-footer">
+           <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+           <button type="button" class="btn btn-primary">Ingresar</button>
+         </div>
+       </form>
+         <span>Si no estas inscripto presiona <a class="bg-dark" href="../inscripcion.html">Aquí</a></span>
+     </div>
+   </div>
+ </div>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
@@ -102,8 +135,7 @@
         <p>Las sagas (las buenas- sagas) son sistemas complejos, leer una saga es un ejercicio de aprendizaje, y el
           autor da las reglas de juego, a veces te da una geografía determinada, con sus propios territorios, espacios y
           fronteras. No necesariamente es un espacio real, es más, muchas veces el encanto de las sagas está en sus
-          lugares imposibles de ver pero latentes en las páginas de una novela. En otras ocasiones, el autor propone una
-          mitología definida, con sus limitaciones y alcances.</p>
+          lugares imposibles de ver pero latentes en las páginas de una novela.</p>
       </article>
       <article>
         <h2>Trilogía "el asesino de reyes"</h2>
@@ -225,7 +257,7 @@
     </section>
     <aside>
       <div class="aside__div--animacion">
-        <img class="aside__elementos--size" src="./assets/libroNuevoCollins.jpg " alt="Libro nuevo Collins" />
+        <img class="aside__elementos--size" src="./assets/Balada de pajaros cantores y serpientes.jpg " alt="Libro nuevo Collins" />
         <img class="aside__elementos--size" src="./assets/fraseRothfuss.jpg" alt="frase Rothfuss" />
         <img class="aside__elementos--size" src="./assets/fraseKing.jpg" alt="frase" />
       </div>

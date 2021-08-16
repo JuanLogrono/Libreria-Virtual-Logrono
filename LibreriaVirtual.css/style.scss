@@ -12,11 +12,11 @@ $accordion-button-active-bg: $principal;
 $navbar-padding-y: 0;
 $navbar-light-color: $claro;
 $card-bg: #4b7183;
-$primary: $claro;
+$primary: $principal;
 $secondary:$claro;
 $theme-colors: (
   "primary":    $primary,
-  "secondary":  $secondary,
+  "secondary":  $secondary, 
 );
 
 
@@ -127,11 +127,9 @@ h5{
   background-image: radial-gradient($principal, $obscuro);
 }
 .nav-item:active {
-  transition: 1s;
-  background-color: #083042;
-  box-shadow: $colorLetras;
-}
-
+  transition: 0s;
+  box-shadow: inset 0px 0px 5px $claro;
+} 
 footer {
   .footer__contacto--deco {
     margin-right: 1em;

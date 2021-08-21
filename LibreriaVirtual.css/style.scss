@@ -13,12 +13,11 @@ $navbar-padding-y: 0;
 $navbar-light-color: $claro;
 $card-bg: #4b7183;
 $primary: $principal;
-$secondary:$claro;
+$secondary: $claro;
 $theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary, 
+  "primary": $primary,
+  "secondary": $secondary,
 );
-
 
 @import "../LibreriaVirtual.css/node/node_modules/bootstrap/scss/bootstrap.scss";
 * {
@@ -26,46 +25,47 @@ $theme-colors: (
   padding: 0;
 }
 body {
-  height: 100%; 
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: $claro;
- 
-  .div__formularioDeIngreso--flex{
+
+  .div__formularioDeIngreso--flex {
     display: flex;
     justify-content: space-between;
     width: 100%;
     background-color: $obscuro;
     position: sticky;
-    top:0.01px;
+    top: 0;
     z-index: 2;
-    img{
+    img {
       height: 2em;
-      margin:0.2em 1em;}
-    .formularioDeIngreso__img--animacion:hover{
-      transition:0.5s;
-      transform: scale(1,1);
-      border-radius: 35%;
-      background-color:$principal;
+      margin: 0.2em 1em;
     }
-   .formularioDeIngreso__img--animacion:active{
-      transition: .2s;
-      transform: scale(0.95,0.95);
+    .formularioDeIngreso__img--animacion:hover {
+      transition: 0.5s;
+      transform: scale(1, 1);
+      border-radius: 35%;
+      background-color: $principal;
+    }
+    .formularioDeIngreso__img--animacion:active {
+      transition: 0.2s;
+      transform: scale(0.95, 0.95);
     }
   }
-  .modal-content span{
+  .modal-content span {
     margin: 3px;
   }
-  .ingreso__formulario--flex{
+  .ingreso__formulario--flex {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
-.modal-footer{
-  justify-content: center;
-}
+  .modal-footer {
+    justify-content: center;
+  }
 
   header,
   footer {
@@ -99,8 +99,8 @@ h2,
 h3 {
   font-size: 1.5em;
 }
-h5{
-  color:$obscuro;
+h5 {
+  color: $obscuro;
   font-weight: bold;
 }
 .headerFooter__a__logo--size {
@@ -119,7 +119,7 @@ h5{
 .nav-item {
   border: solid 1px $obscuro;
   border-radius: 5%;
-  margin: 1em;
+  margin: 1px;
   width: max-content;
 }
 .nav-item:hover {
@@ -129,7 +129,7 @@ h5{
 .nav-item:active {
   transition: 0s;
   box-shadow: inset 0px 0px 5px $claro;
-} 
+}
 footer {
   .footer__contacto--deco {
     margin-right: 1em;

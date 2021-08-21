@@ -10802,7 +10802,7 @@ body .div__formularioDeIngreso--flex {
   background-color: #0a3143;
   position: -webkit-sticky;
   position: sticky;
-  top: 0.01px;
+  top: 0;
   z-index: 2;
 }
 
@@ -10821,8 +10821,8 @@ body .div__formularioDeIngreso--flex .formularioDeIngreso__img--animacion:hover 
 }
 
 body .div__formularioDeIngreso--flex .formularioDeIngreso__img--animacion:active {
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   -webkit-transform: scale(0.95, 0.95);
           transform: scale(0.95, 0.95);
 }
@@ -10928,7 +10928,7 @@ h5, .h5 {
 .nav-item {
   border: solid 1px #0a3143;
   border-radius: 5%;
-  margin: 1em;
+  margin: 1px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -11001,14 +11001,21 @@ footer a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .sectionAside--flex section {
-  width: 100%;
+  width: 90%;
+}
+
+.sectionAside--flex section a {
+  text-decoration: none;
 }
 
 .sectionAside--flex section p {
@@ -11043,7 +11050,7 @@ aside {
   position: -webkit-sticky;
   position: sticky;
   top: 13.5em;
-  width: 20%;
+  width: 75%;
   height: 20em;
   overflow: hidden;
   margin: 3px 2px 1px 1px;
@@ -11060,8 +11067,8 @@ aside {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
-  width: 60rem;
+  height: 15em;
+  width: 100%;
   animation: desliza 15s infinite alternate-reverse;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
@@ -11107,28 +11114,34 @@ aside {
   height: 100%;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 480px) {
+  aside {
+    width: 40%;
+  }
+}
+
+@media (min-width: 800px) {
   .sectionAside--flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
   }
   .sectionAside--flex section {
-    width: 90%;
+    width: 100%;
   }
   aside {
-    width: 75%;
+    width: 20%;
   }
   aside .aside__div--animacion {
-    height: 15em;
-    width: 100%;
+    height: 100%;
+    width: 60rem;
   }
 }
 
@@ -11187,11 +11200,15 @@ aside {
 }
 
 .libros__imagenPortada--size {
-  width: 5rem;
-  height: 8rem;
+  width: 3rem;
+  height: 5rem;
 }
 
 .libros {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin-bottom: 9rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11205,7 +11222,7 @@ aside {
 }
 
 .libros article {
-  height: 50%;
+  font-size: 0.75em;
   border: solid 1px #0a3143;
   background-color: #93cff57c;
   margin: 3px 5px;
@@ -11734,20 +11751,16 @@ aside {
   margin: auto 1em auto 0;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 800px) {
+  .libros {
+    margin-bottom: 6rem;
+  }
   .libros article {
-    font-size: 0.75em;
+    font-size: 1em;
   }
   .libros article .libros__imagenPortada--size {
-    width: 3rem;
-    height: 5rem;
-  }
-  .libros article h2, .libros article .h2,
-  .libros article h3,
-  .libros article .h3,
-  .libros article h4,
-  .libros article .h4 {
-    font-size: 0.9em;
+    width: 5rem;
+    height: 8rem;
   }
 }
 
